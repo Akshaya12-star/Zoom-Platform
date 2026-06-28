@@ -1,0 +1,254 @@
+/* ── NAVBAR ── */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 60px;
+  background-color: var(--zoom-white);
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--zoom-blue);
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-size: 15px;
+  color: var(--zoom-dark);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--zoom-blue);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-signin {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--zoom-blue);
+  padding: 8px 16px;
+}
+
+.btn-signin:hover {
+  text-decoration: underline;
+}
+
+.btn-signup {
+  background-color: var(--zoom-blue);
+  color: var(--zoom-white);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-signup:hover {
+  background-color: #0040cc;
+}
+
+/* ── HERO ── */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+  min-height: 90vh;
+}
+
+.hero-text {
+  max-width: 520px;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--zoom-dark);
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+  color: var(--zoom-blue);
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: var(--zoom-gray);
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background-color: var(--zoom-blue);
+  color: var(--zoom-white);
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #0040cc;
+}
+
+.btn-secondary {
+  border: 2px solid var(--zoom-blue);
+  color: var(--zoom-blue);
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background-color: #f0f4ff;
+}
+
+/* ── VIDEO GRID (hero right side) ── */
+.hero-image {
+  flex-shrink: 0;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.video-card {
+  width: 160px;
+  height: 120px;
+  background-color: #2d2d2d;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: white;
+}
+
+.video-card.active {
+  border: 3px solid var(--zoom-blue);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--zoom-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.video-card p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* ── FEATURES ── */
+.features {
+  padding: 80px 60px;
+  text-align: center;
+  background-color: var(--zoom-white);
+}
+
+.features h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: var(--zoom-dark);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  background-color: var(--zoom-light);
+  border-radius: 12px;
+  padding: 36px 24px;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--zoom-dark);
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: var(--zoom-gray);
+  line-height: 1.6;
+}
+
+/* ── FOOTER ── */
+.footer {
+  background-color: var(--zoom-dark);
+  color: #aaa;
+  text-align: center;
+  padding: 32px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--zoom-white);
+}
+
+.footer p {
+  font-size: 13px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.footer-links a:hover {
+  color: var(--zoom-white);
+}

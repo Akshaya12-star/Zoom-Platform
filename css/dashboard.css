@@ -1,0 +1,367 @@
+/* ── LAYOUT ── */
+.layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+  width: 220px;
+  background-color: #1a1a2e;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  flex-shrink: 0;
+}
+
+.sidebar-logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--zoom-white);
+  padding: 0 24px;
+  margin-bottom: 32px;
+  letter-spacing: -1px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.nav-item {
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.nav-item:hover {
+  color: var(--zoom-white);
+  background-color: rgba(255,255,255,0.05);
+}
+
+.nav-item.active {
+  color: var(--zoom-white);
+  background-color: rgba(11, 92, 255, 0.15);
+  border-left: 3px solid var(--zoom-blue);
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: auto;
+}
+
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--zoom-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--zoom-white);
+}
+
+.user-status {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* ── MAIN CONTENT ── */
+.main-content {
+  flex: 1;
+  background-color: #f5f7ff;
+  overflow-y: auto;
+  padding: 0;
+}
+
+/* ── TOPBAR ── */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background-color: var(--zoom-white);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.topbar-left h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--zoom-dark);
+}
+
+.topbar-left p {
+  font-size: 13px;
+  color: var(--zoom-gray);
+  margin-top: 2px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--zoom-light);
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  width: 180px;
+  color: var(--zoom-dark);
+}
+
+.notif-bell {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ── QUICK ACTIONS ── */
+.quick-actions {
+  display: flex;
+  gap: 16px;
+  padding: 28px 32px;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 32px;
+  background-color: var(--zoom-white);
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--zoom-dark);
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  border-color: var(--zoom-blue);
+  box-shadow: 0 2px 12px rgba(11, 92, 255, 0.1);
+}
+
+.action-btn.new-meeting {
+  background-color: var(--zoom-blue);
+  color: var(--zoom-white);
+  border-color: var(--zoom-blue);
+}
+
+.action-btn.new-meeting:hover {
+  background-color: #0040cc;
+}
+
+.action-icon {
+  font-size: 24px;
+}
+
+/* ── CONTENT GRID ── */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 0 32px 32px;
+}
+
+/* ── CARDS ── */
+.card {
+  background-color: var(--zoom-white);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card.stats {
+  grid-column: 1 / -1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--zoom-dark);
+}
+
+.card-header a {
+  font-size: 13px;
+  color: var(--zoom-blue);
+}
+
+/* ── MEETING ITEMS ── */
+.meeting-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.meeting-item:last-child {
+  border-bottom: none;
+}
+
+.meeting-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.time {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--zoom-dark);
+}
+
+.date {
+  font-size: 11px;
+  color: var(--zoom-gray);
+}
+
+.meeting-info {
+  flex: 1;
+}
+
+.meeting-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--zoom-dark);
+}
+
+.meeting-id {
+  font-size: 12px;
+  color: var(--zoom-gray);
+  margin-top: 2px;
+}
+
+.btn-join {
+  background-color: var(--zoom-blue);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-join:hover {
+  background-color: #0040cc;
+}
+
+/* ── RECENT ITEMS ── */
+.recent-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.recent-item:last-child {
+  border-bottom: none;
+}
+
+.recent-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e8f0ff;
+  color: var(--zoom-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.recent-info {
+  flex: 1;
+}
+
+.recent-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--zoom-dark);
+}
+
+.recent-meta {
+  font-size: 12px;
+  color: var(--zoom-gray);
+  margin-top: 2px;
+}
+
+.recent-badge {
+  font-size: 12px;
+  color: var(--zoom-gray);
+  background-color: var(--zoom-light);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* ── STATS ── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 6px;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--zoom-blue);
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--zoom-gray);
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom - Dashboard</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">Zoom</div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">🏠 Home</a>
+        <a href="#" class="nav-item">💬 Chat</a>
+        <a href="meeting.html" class="nav-item">📹 Meetings</a>
+        <a href="#" class="nav-item">📅 Calendar</a>
+        <a href="#" class="nav-item">📞 Phone</a>
+        <a href="#" class="nav-item">👥 Contacts</a>
+        <a href="#" class="nav-item">⚙️ Settings</a>
+      </nav>
+
+      <div class="sidebar-user">
+        <div class="user-avatar">AK</div>
+        <div class="user-info">
+          <p class="user-name">Akshaya</p>
+          <p class="user-status">🟢 Active</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <h2>Good Morning, Akshaya 👋</h2>
+          <p>Wednesday, June 28, 2026</p>
+        </div>
+        <div class="topbar-right">
+          <div class="search-bar">
+            <span>🔍</span>
+            <input type="text" placeholder="Search...">
+          </div>
+          <div class="notif-bell">🔔</div>
+        </div>
+      </header>
+
+      <!-- QUICK ACTIONS -->
+      <section class="quick-actions">
+        <button class="action-btn new-meeting">
+          <span class="action-icon">📹</span>
+          <span>New Meeting</span>
+        </button>
+        <button class="action-btn">
+          <span class="action-icon">➕</span>
+          <span>Join</span>
+        </button>
+        <button class="action-btn">
+          <span class="action-icon">📅</span>
+          <span>Schedule</span>
+        </button>
+        <button class="action-btn">
+          <span class="action-icon">🖥️</span>
+          <span>Share Screen</span>
+        </button>
+      </section>
+
+      <!-- CONTENT GRID -->
+      <div class="content-grid">
+
+        <!-- UPCOMING MEETINGS -->
+        <section class="card upcoming">
+          <div class="card-header">
+            <h3>Upcoming Meetings</h3>
+            <a href="#">See all</a>
+          </div>
+
+          <div class="meeting-item">
+            <div class="meeting-time">
+              <span class="time">10:00 AM</span>
+              <span class="date">Today</span>
+            </div>
+            <div class="meeting-info">
+              <p class="meeting-title">Team Standup</p>
+              <p class="meeting-id">Meeting ID: 123 456 7890</p>
+            </div>
+            <button class="btn-join">Join</button>
+          </div>
+
+          <div class="meeting-item">
+            <div class="meeting-time">
+              <span class="time">2:00 PM</span>
+              <span class="date">Today</span>
+            </div>
+            <div class="meeting-info">
+              <p class="meeting-title">Project Review</p>
+              <p class="meeting-id">Meeting ID: 987 654 3210</p>
+            </div>
+            <button class="btn-join">Join</button>
+          </div>
+
+          <div class="meeting-item">
+            <div class="meeting-time">
+              <span class="time">11:00 AM</span>
+              <span class="date">Tomorrow</span>
+            </div>
+            <div class="meeting-info">
+              <p class="meeting-title">Client Presentation</p>
+              <p class="meeting-id">Meeting ID: 456 789 1230</p>
+            </div>
+            <button class="btn-join">Join</button>
+          </div>
+
+        </section>
+
+        <!-- RECENT MEETINGS -->
+        <section class="card recent">
+          <div class="card-header">
+            <h3>Recent Meetings</h3>
+            <a href="#">See all</a>
+          </div>
+
+          <div class="recent-item">
+            <div class="recent-avatar">SJ</div>
+            <div class="recent-info">
+              <p class="recent-title">Design Sync</p>
+              <p class="recent-meta">Yesterday · 45 mins</p>
+            </div>
+            <span class="recent-badge">Ended</span>
+          </div>
+
+          <div class="recent-item">
+            <div class="recent-avatar">SR</div>
+            <div class="recent-info">
+              <p class="recent-title">Sprint Planning</p>
+              <p class="recent-meta">Mon · 1 hr 20 mins</p>
+            </div>
+            <span class="recent-badge">Ended</span>
+          </div>
+
+          <div class="recent-item">
+            <div class="recent-avatar">AR</div>
+            <div class="recent-info">
+              <p class="recent-title">Weekly Catchup</p>
+              <p class="recent-meta">Sun · 30 mins</p>
+            </div>
+            <span class="recent-badge">Ended</span>
+          </div>
+
+        </section>
+
+        <!-- STATS -->
+        <section class="card stats">
+          <div class="card-header">
+            <h3>This Week</h3>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number">12</span>
+              <span class="stat-label">Meetings</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">8h</span>
+              <span class="stat-label">Total Time</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5</span>
