@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom - Meeting Room</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/meeting.css">
+</head>
+<body>
+
+  <div class="meeting-layout">
+
+    <!-- TOP BAR -->
+    <header class="meeting-topbar">
+      <div class="meeting-info">
+        <span class="meeting-title">Team Standup</span>
+        <span class="meeting-id">ID: 123 456 7890</span>
+      </div>
+      <div class="meeting-timer">00:23:45</div>
+      <div class="meeting-top-actions">
+        <button class="top-btn">🔒 Secure</button>
+        <button class="top-btn">👥 5 Participants</button>
+      </div>
+    </header>
+
+    <!-- MAIN AREA -->
+    <div class="meeting-main">
+
+      <!-- VIDEO GRID -->
+      <div class="video-section">
+        <div class="video-grid">
+
+          <!-- Main speaker -->
+          <div class="video-card main-speaker">
+            <div class="video-bg">
+              <div class="participant-avatar large">AK</div>
+            </div>
+            <div class="video-label">
+              <span class="mic-icon">🎤</span>
+              <span>Akshaya (You)</span>
+            </div>
+            <div class="speaking-indicator"></div>
+          </div>
+
+          <!-- Other participants -->
+          <div class="video-card">
+            <div class="video-bg dark">
+              <div class="participant-avatar">SJ</div>
+            </div>
+            <div class="video-label">
+              <span class="mic-icon muted">🔇</span>
+              <span>Samuel James</span>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-bg darker">
+              <div class="participant-avatar">AR</div>
+            </div>
+            <div class="video-label">
+              <span class="mic-icon">🎤</span>
+              <span>AgnesRemina</span>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-bg">
+              <div class="participant-avatar">SI</div>
+            </div>
+            <div class="video-label">
+              <span class="mic-icon muted">🔇</span>
+              <span>Siva</span>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-bg dark">
+              <div class="participant-avatar">VA</div>
+            </div>
+            <div class="video-label">
+              <span class="mic-icon">🎤</span>
+              <span>Venkatesan A</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CHAT PANEL -->
+      <div class="chat-panel">
+        <div class="chat-header">
+          <h3>Meeting Chat</h3>
+          <button class="close-chat">✕</button>
+        </div>
+
+        <div class="chat-messages">
+
+          <div class="chat-message">
+            <div class="chat-avatar">SJ</div>
+            <div class="chat-bubble">
+              <span class="chat-name">Samuel James</span>
+              <p>Hey everyone, can you hear me?</p>
+              <span class="chat-time">10:02 AM</span>
+            </div>
+          </div>
+
+          <div class="chat-message">
+            <div class="chat-avatar">AR</div>
+            <div class="chat-bubble">
+              <span class="chat-name">AgnesRemina</span>
+              <p>Yes! Loud and clear 👍</p>
+              <span class="chat-time">10:03 AM</span>
+            </div>
+          </div>
+
+          <div class="chat-message mine">
+            <div class="chat-bubble">
+              <span class="chat-name">You</span>
+              <p>Let's get started with the standup!</p>
+              <span class="chat-time">10:04 AM</span>
+            </div>
+          </div>
+
+          <div class="chat-message">
+            <div class="chat-avatar">SI</div>
+            <div class="chat-bubble">
+              <span class="chat-name">Siva</span>
+              <p>Sharing my screen now</p>
+              <span class="chat-time">10:05 AM</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="chat-input">
+          <input type="text" placeholder="Type a message...">
+          <button class="send-btn">➤</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM TOOLBAR -->
+    <footer class="toolbar">
+
+      <div class="toolbar-left">
+        <span class="toolbar-time">10:23 AM</span>
+      </div>
+
+      <div class="toolbar-center">
+        <!-- Mute -->
+        <div class="tool-btn">
+          <button class="tool-icon">🎤</button>
+          <span>Mute</span>
+        </div>
+
+        <!-- Video -->
+        <div class="tool-btn">
+          <button class="tool-icon">📹</button>
+          <span>Video</span>
+        </div>
+
+        <!-- Security -->
+        <div class="tool-btn">
+          <button class="tool-icon">🔒</button>
+          <span>Security</span>
+        </div>
+
+        <!-- Participants -->
+        <div class="tool-btn">
+          <button class="tool-icon">👥</button>
+          <span>Participants</span>
+        </div>
+
+        <!-- Chat -->
+        <div class="tool-btn">
+          <button class="tool-icon">💬</button>
+          <span>Chat</span>
+        </div>
+
+        <!-- Share Screen -->
+        <div class="tool-btn">
+          <button class="tool-icon">🖥️</button>
+          <span>Share Screen</span>
+        </div>
+
+        <!-- Record -->
+        <div class="tool-btn">
+          <button class="tool-icon">⏺️</button>
+          <span>Record</span>
+        </div>
+
+        <!-- Reactions -->
+        <div class="tool-btn">
+          <button class="tool-icon">😊</button>
+          <span>Reactions</span>
+        </div>
+
+        <!-- End Meeting -->
+        <div class="tool-btn">
+          <button class="tool-icon end-btn">End</button>
+          <span>End</span>
+        </div>
+      </div>
+
+      <div class="toolbar-right">
+        <button class="view-btn">⊞ Gallery</button>
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
