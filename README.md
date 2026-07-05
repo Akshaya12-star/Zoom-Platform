@@ -73,7 +73,8 @@ and GitHub team collaboration.
 - GitHub Pages (Deployment)
 
 ## 📁 Folder Structure
-'''
+
+```
 Zoom-Platform/
 ├── index.html
 ├── pages/
@@ -92,8 +93,7 @@ Zoom-Platform/
 │   └── meeting.js
 ├── images/
 └── README.md
-'''
----
+```
 #Author
 Akshaya S
 ---
