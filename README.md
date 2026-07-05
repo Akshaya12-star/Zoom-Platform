@@ -72,8 +72,9 @@ and GitHub team collaboration.
 - Google Fonts (Poppins)
 - GitHub Pages (Deployment)
 
----
 ## 📁 Folder Structure
+
+---
 Zoom-Platform/
 ├── index.html
 ├── pages/
