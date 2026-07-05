@@ -71,7 +71,7 @@ and GitHub team collaboration.
 - Font Awesome Icons
 - Google Fonts (Poppins)
 - GitHub Pages (Deployment)
-- 
+
 ---
 ## 📁 Folder Structure
 Zoom-Platform/
